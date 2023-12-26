@@ -9,6 +9,7 @@ We have not only a dashboard for each country but also a published datasource fo
 This is the script used to publish those workbooks.
 
 The Project is composed of the following files:
+
 -**Template.twbx**: template of the Tableau datasource. This file is not available in this repository for confidentiality purposes.
 
 -**config.ini**: text file where to input the different configuration parameters of our architecture such as Tableau Server URL, Tableau token credentials for being able to publish it from the command line, etc.
@@ -22,12 +23,14 @@ The Project is composed of the following files:
 -**countryWorkbookGenerator.py**: code that will edit the XML code of the Template.tdsx in order to change the country parameter and will create a different tdsx file for each country listed in the configuration file (config.ini). The results for the workbooks will be saved into the folder File_1.
 
 ### Requirements:
+
 -Have python installed. We use Python 3.8.2
 
 -Have tabcmd installed. We use tabcmd 2.0.11
 
 ### Quick Guide:
 To adapt the script for your specific needs you will have to:
+
 -Open the twbx you want to publish and save it as the name of the template given in the config file. If you rename the workbook without opening it and save it as the new name it won´t work because Tableau won’t change the name in the XML file.
 
 -Edit the file config.ini
