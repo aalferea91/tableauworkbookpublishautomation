@@ -1,3 +1,11 @@
+---
+title: "tableauworkbookpublishautomation"
+type: "project"
+tags: python, Tableau, Goodyear
+
+---
+
+
 # tableauworkbookpublishautomation
 
 ### Context:
